@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS Chat - Blog ya Biashara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>📊 ADS Chat</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#charts">Analytics</a></li>
+                <li><a href="#contact">Mawasiliano</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Karibu kwenye ADS Chat</h2>
+            <p>Makala za Biashara na Analytics Zako</p>
+            <button class="btn" onclick="scrollTo('blog')">Soma Blog</button>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>📰 Blog - Makala za Biashara</h2>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Makala zitapakwa hapa kwa JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="charts" class="charts">
+        <div class="container">
+            <h2>📈 Analytics & Charts</h2>
+            <div class="chart-container">
+                <canvas id="analyticsChart"></canvas>
+            </div>
+            <div class="stats-grid" id="statsGrid">
+                <!-- Stats zitapakwa hapa -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>📧 Mawasiliano</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Jina lako" required>
+                <input type="email" placeholder="Email yako" required>
+                <textarea placeholder="Ujumbe wako" rows="5" required></textarea>
+                <button type="submit" class="btn">Tuma Ujumbe</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ADS Chat. Haki zote zimehifadhiwa. | Kuruka kwa maelezo</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
